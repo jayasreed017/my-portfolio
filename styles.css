@@ -1,0 +1,73 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header */
+.site-header {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Sections */
+section {
+  padding: 3rem 1rem;
+  margin: 1.5rem auto;
+  max-width: 800px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transform: perspective(1000px) rotateX(0deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+section:hover {
+  transform: perspective(1000px) rotateX(5deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #6c63ff, #3f3d56);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Topics */
+.topics ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+.topics li {
+  margin: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  margin-top: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+}
